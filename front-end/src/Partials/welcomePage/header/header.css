@@ -1,0 +1,95 @@
+:root {
+    --byat : #F6FBF7;
+    --blangaci : #F2F3EF;
+    --khedar : #DCF09B;
+    --zera9 : #8AD6E4;
+    --blueMari : #242D34;
+    --blueMariMefto7 : #36576e;
+    --radius : 5px;
+}
+
+header {
+    /* background-color: var(--zera9); */
+    width: 80vw;
+    margin: auto;
+    height: 3rem;
+    border-bottom: 0.005rem solid var(--blueMari);
+}
+.parentLogoBrand {
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    height: 3rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.LogoBrand {
+    width: 9rem;
+    height: 2rem;
+    object-fit: cover;
+}
+.ulLinksNavbar {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    justify-content: end;
+    align-items: center;
+}
+.ulLinksNavbar h6{
+    color: var(--blueMari);
+    word-spacing: 0.6rem;
+}
+.ulLinksNavbar li i{
+    color: var(--blueMari);
+    font-size: 1.5rem;
+}
+.verticaleLine {
+    background-color: var(--blueMari);
+    height: 2rem;
+    position: absolute;
+    top: 0.6rem;
+    width: 1px;
+}
+.BtnLogin {
+    color: var(--zera9);
+    background-color: var(--blueMari);
+    text-decoration: none;
+    padding: 0.2rem 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius);
+    border: 0.05rem solid var(--blueMari);
+    letter-spacing: 0.05rem;
+    transition: all .2s;
+}
+.BtnLogin:hover {
+    background: transparent;
+    border: 0.05rem solid var(--blueMari);
+    color: var(--blueMari);
+}
+.BtnLogin:active {
+    color: var(--zera9);
+    background: linear-gradient(115deg, var(--blueMari), var(--blueMari), var(--blueMari), var(--blueMariMefto7));
+    opacity: 0.8;
+    transform: scale(0.85);
+}
+.Contact {
+    transition: all .1s;
+}
+.Contact i {
+    padding: 0.2rem;
+}
+.Contact:hover i {
+    background-color: var(--blueMari);
+    border-radius: var(--radius);
+    color: var(--zera9);
+    padding: 0.2rem;
+}
+.Contact:active i {
+    background-color: var(--blueMariMefto7);
+    border-radius: var(--radius);
+    color: var(--zera9);
+    padding: 0.2rem;
+    transform: scale(0.8);
+}

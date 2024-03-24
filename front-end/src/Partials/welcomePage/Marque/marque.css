@@ -1,0 +1,68 @@
+:root {
+    --byat: #F6FBF7;
+    --blangaci: #F2F3EF;
+    --khedar: #DCF09B;
+    --zera9: #8AD6E4;
+    --blueMari: #242D34;
+    --blueMariMefto7: #36576e;
+    --blueDyalLogos:#1357845f;
+    --radius: 7px;
+}
+.parentMarque {
+    padding: 1rem;
+}
+.marquee-container {
+    width: 80vw;
+    margin: auto ;
+    display: flex;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    flex-direction: row ;
+}
+.marquee-item {
+    width: 100px;
+    height: 90px;
+    border-radius: var(--radius);
+    background-color: var(--blueDyalLogos);
+    border: 0.05rem dashed var(--blueMari);
+    margin: 1rem;
+    display: grid;
+    place-items: center;
+    object-fit: contain;
+    transition: all .2s;
+    cursor: pointer;
+}
+.marquee-item:hover {
+    transform: scale(1.3);
+}
+.TitleMarque {
+    color: var(--blueMari);
+    font-size: 1rem;
+    width: 80vw;
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem2;
+}
+
+@media (max-width:1029px){
+    .parentComposantMarque {
+        position: relative;
+        top: 10rem;
+    }
+    .marquee-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .marquee-item {
+        height: 100px;
+    }
+    }
+
+@media (max-width:503px){
+    .parentComposantMarque {
+        position: relative;
+        top: 18.5rem;
+    }
+
+    }

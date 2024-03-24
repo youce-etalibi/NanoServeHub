@@ -1,0 +1,133 @@
+:root {
+    --byat : #F6FBF7;
+    --blangaci : #F2F3EF;
+    --khedar : #DCF09B;
+    --zera9 : #8AD6E4;
+    --blueMari : #242D34;
+    --blueMariMefto7 : #36576e;
+    --radius : 7px;
+}
+
+
+.parentFooter {
+    position: relative;
+    bottom: 12rem;
+    background-color: var(--blueMari);
+    padding: 2rem;
+}
+
+.rowBrandLogo img{
+    width: 200px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    margin: 1rem;
+}
+.parentFirstTable {
+    padding: 1rem;
+    color: var(--byat);
+    font-weight: 400;
+}   
+.parentFirstTable table {
+    width: 80vw;
+    margin: auto;
+}
+.parentFirstTable table th {
+    text-align:start;
+    color: var(--zera9);
+    padding: 0.8rem;
+}
+.parentFirstTable table td {
+    padding: 0.6rem;
+    font-size: 0.8rem;
+    transition: all .2s ;
+}
+.parentFirstTable table td:hover {
+    color: var(--zera9);
+    cursor: pointer;
+}
+.emailFooter {
+    background:transparent;
+    border: 0.05rem solid var(--byat);
+    color: var(--byat);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);   
+    width: 80%;
+}
+.submitFooter {
+    background-color: var(--zera9);
+    color: var(--blueMari);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    width: 80%;
+}
+.mediaIconsLine {
+    display: flex;
+    gap: 0.7rem;
+}
+.mediaICons {
+    display: grid;
+    place-items: center;
+    font-size: 1.4rem;
+    padding: 0.3rem;
+    border-radius: 50%;
+    color: var(--zera9);
+    border: 0.05rem solid var(--zera9);
+    transition: all .15s;
+}
+.mediaICons:hover {
+    background-color:var(--zera9) ;
+    color: var(--blueMari);
+}
+.parentHelpFooter {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.copyrightP {
+    opacity: 0.7;
+}
+
+@media (max-width:1028px){
+    .parentFooter {
+        position: relative;
+        top: 14rem;
+    }
+}
+@media (max-width:467px){
+    .parentFooter {
+        position: relative;
+        top: 21rem;
+    }
+}
+
+@media (max-width:656px) {
+    .rowBrandLogo {
+        display: flex;
+        justify-content: center;
+    }
+    .parentFirstTable table {
+        display: flex;
+        flex-direction: column;
+    }
+    .parentFirstTable table td, .parentFirstTable table th{
+        font-size: 0.4rem;
+    }
+    .mediaIconsLine {
+        display: flex;
+        flex-direction: column;
+    }
+    .parentHelpFooter {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .parentFirstTable table td input{ 
+        font-size: 0.5rem;
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,66 @@
+:root {
+    --byat : #F6FBF7;
+    --blangaci : #F2F3EF;
+    --khedar : #DCF09B;
+    --zera9 : #8AD6E4;
+    --blueMari : #242D34;
+    --blueMariMefto7 : #36576e;
+    --radius : 7px;
+}
+
+.parentRequest {
+    position: relative;
+    bottom: 20rem;
+    background-image: url('/public/ImagesText/backgroundRest.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80vw;
+    margin: auto;
+    border-radius: var(--radius);
+    display: grid;
+    place-items: center;
+    height: 24rem;
+    border-image: fill 0 linear-gradient(#0001, #000);
+  }
+.textRequest h1{
+    color: var(--byat);
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+.textRequest h6{
+    color: var(--byat);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+    width: 55vw;
+}
+.textRequest button{
+    background:transparent;
+    color: var(--byat);
+    padding: 0.7rem 1rem;
+    text-decoration: none;
+    border-radius: var(--radius);
+    margin-top: 10px;
+    border: 0.1rem solid var(--byat);
+}
+.textRequest button:hover {
+    background-color: var(--byat);
+    color: var(--blueMari);
+}
+
+@media (max-width:1027px) {
+    .parentRequest {
+        position: relative;
+        top: 10rem;
+    }
+}
+
+@media (max-width:471px) {
+    .parentRequest {
+        position: relative;
+        top: 19rem;
+        
+    }
+}
+

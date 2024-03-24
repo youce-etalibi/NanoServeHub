@@ -1,0 +1,45 @@
+:root {
+    --byat : #F6FBF7;
+    --blangaci : #F2F3EF;
+    --khedar : #DCF09B;
+    --zera9 : #8AD6E4;
+    --blueMari : #242D34;
+    --blueMariMefto7 : #36576e;
+    --radius : 7px;
+}
+
+::selection {
+    background-color: var(--blueMari);
+    color: var(--zera9);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+body {
+    background-color: var(--byat);
+}
+#root {
+    height: max-content;
+    background-color: var(--byat);
+    height: 178rem;
+}
+
+@media (max-width:1028px) {
+    #root {
+        height: 220rem;
+    }
+}
+@media (max-width:840px) {
+    #root {
+        height: 270rem;
+    }
+}
+@media (max-width:494px) {
+    #root {
+        height: 320rem;
+    }
+}
